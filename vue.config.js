@@ -31,6 +31,7 @@ function getEntry(globPath) {
 }
 
 let pages = getEntry('./src/pages/**?/*.html')
+console.log(pages)
 //配置end
 
 module.exports = {

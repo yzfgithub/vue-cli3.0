@@ -1,13 +1,12 @@
 <template>
-    <div id="app">
+    <div id="app1">
         <el-container>
-            <el-header>
-                <myMeader></myMeader>
-            </el-header>
             <el-main>
-                <hello></hello>
-                <span @click="totest" style="padding: 5px 10px;background-color: green;">test1</span>
-                <router-link to="/test2" style="padding: 5px 10px;background-color: blue;">test2</router-link>
+                <myMeader></myMeader>
+                    <!--<div>-->
+                        <!--<router-link to="/test1" style="padding: 5px 10px;background-color: blue;">test2</router-link>-->
+                        <!--<router-link to="/test2" style="padding: 5px 10px;background-color: blue;">test2</router-link>-->
+                    <!--</div>-->
                 <router-view></router-view>
             </el-main>
         </el-container>
@@ -18,14 +17,12 @@
     import myMeader from '../../components/header/header'
     import hello from '../../components/hello/hello'
     export default {
-        name: 'app',
+        name: 'app1',
         components: {
             myMeader,hello
         },
         methods:{
-            totest(){
-                this.$router.push('test1')
-            }
+
         }
     }
 </script>
